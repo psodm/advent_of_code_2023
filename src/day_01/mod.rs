@@ -5,8 +5,8 @@ pub fn parts() {
     let mut p1 = 0;
     let mut p2 = 0;
     for line in include_str!("../../input/day_01.txt").split("\n") {
-        let mut p1_digits: Vec<_> = vec![];
-        let mut p2_digits: Vec<_> = vec![];
+        let mut p1_digits: Vec<char> = vec![];
+        let mut p2_digits: Vec<char> = vec![];
         for (i, c) in line.chars().enumerate() {
             if c.is_numeric() {
                 p1_digits.push(c);
@@ -30,6 +30,6 @@ pub fn parts() {
                 .parse::<i32>()
                 .unwrap();
     }
-    println!("{}", p1);
-    println!("{}", p2);
+    println!("D01-P1: {}", p1);
+    println!("D01-P2: {}", p2);
 }
