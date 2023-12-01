@@ -1,5 +1,5 @@
 mod day_01;
 
 fn main() {
-    day_01::parts();
+    day_01::solution();
 }

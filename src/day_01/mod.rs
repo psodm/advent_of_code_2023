@@ -1,4 +1,4 @@
-pub fn parts() {
+pub fn solution() {
     let nums = vec![
         "one", "two", "three", "four", "five", "six", "seven", "eight", "nine",
     ];
@@ -38,6 +38,7 @@ pub fn parts() {
 // a more idiomatic rewrite by u/AugustusLego
 // on the reddit megathread for day 1:
 // https://www.reddit.com/r/adventofcode/comments/1883ibu/2023_day_1_solutions/kbj8l1n/?context=3
+
 #[allow(unused)]
 pub fn solution_alternate_part1() {
     let out: Vec<u32> = include_str!("../../input/day_01.txt")
